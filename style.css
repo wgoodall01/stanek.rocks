@@ -1,0 +1,80 @@
+html {
+  font-family: "Alatsi", sans-serif;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* "live rank count" */
+.container h2 {
+  letter-spacing: 0.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.5;
+  font-variant: small-caps;
+}
+
+.rank {
+  position: relative;
+  margin: 0 auto;
+  padding-left: -1rem;
+}
+
+.rank .throbber {
+  position: absolute;
+  top: -0.5rem;
+  left: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+
+  background-color: red;
+  animation: 3s ease infinite throb;
+}
+
+.rank .number {
+  font-size: 10rem;
+  line-height: 8rem;
+  margin-left: 1rem;
+}
+
+.rank .label {
+  opacity: 0.3;
+  font-size: 5rem;
+  line-height: 5rem;
+  margin-left: 1rem;
+  font-variant: small-caps;
+}
+
+/* Animation for throbber */
+@keyframes throb {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
