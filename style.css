@@ -59,14 +59,12 @@ h6 {
   position: relative;
   font-size: 10rem;
   line-height: 8rem;
-  margin-left: 1rem;
 }
 
 .rank .label {
   opacity: 0.3;
   font-size: 5rem;
   line-height: 5rem;
-  margin-left: 1rem;
   font-variant: small-caps;
 }
 
